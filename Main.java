@@ -23,11 +23,12 @@ public class Main {
                             System.out.print(i + "");
                         } else {
                             System.out.print(i + " ,");
+                            done = true;
                         }
                     }
 
                     }
-                    done = true;
+
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Coś poszło nie tak. Sprawdź czy podałeś liczbę całkowitą");
