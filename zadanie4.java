@@ -36,8 +36,13 @@ public class zadanie4 {
                 System.out.println(result);
                 break;
             case "/":
-                result = a / b;
-                System.out.println(result);
+                if(b==0){
+                    System.out.println(b+ " jest zerem");
+                }
+                else {
+                    result = a / b;
+                    System.out.println(result);
+                }
                 break;
             default:
                 System.out.println("Podałeś zły znak!");
