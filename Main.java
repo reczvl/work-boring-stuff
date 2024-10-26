@@ -5,9 +5,34 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        ..
+        boolean done = false;
+        while(!done){
+            try {
+                System.out.print("Podaj cyfre calkowita: ");
+                Scanner scanner = new Scanner(System.in);
+                int number = scanner.nextInt();
+                scanner.close();
+                if (number < 1) {
+                    throw new InputMismatchException();
+                }
+                else{
+                for (int ii = 1; ii <= number; ii++) {
+                    System.out.println();
+                    for (int i = 1; i <= number; i++) {
+                        if (i == number) {
+                            System.out.print(i + "");
+                        } else {
+                            System.out.print(i + " ,");
+                        }
+                    }
 
-
+                    }
+                    done = true;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Coś poszło nie tak. Sprawdź czy podałeś liczbę całkowitą");
+            }
+        }
 //                                       WYŚWIETLANIE LISTY LICZB
 //
 //        System.out.print("Podaj cyfre calkowita: ");
