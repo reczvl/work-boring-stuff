@@ -11,7 +11,7 @@ public class zadanie6 {
         } else{
             wynik = ((przychod = 85528) *0.32+14839);
             System.out.println(wynik);
-        }
+        }.
 
     }
 }
