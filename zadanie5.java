@@ -30,6 +30,6 @@ public class zadanie5 {
             }
             System.out.println(sumwhile);
 
-        }scan.close();
+        }
     }
 }
